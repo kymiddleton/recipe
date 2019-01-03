@@ -46,7 +46,7 @@ h1 {
 
 .button {
   display: inline-block;
-  position: fixed;
+  position: absolute;
   text-align: center;
   background-color: rgb(118, 220, 232);
   border-radius: 4px;
@@ -71,21 +71,46 @@ h1 {
   padding-top: 20px;
 }
 
-.name {
-  font-size: 40px;
+.detailview {
+  display: flex;
+  padding-left: 60px;
+  padding-top: 45px;
+}
+
+.recipe-details {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 350px 550px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.recipetitle {
+  font-size: 45px;
+  font-family: 'Courgette', cursive;
+  color: black;
+  text-align: center;
 }
 
 .ingredients {
+  font-size: 20px;
+  margin-left: 25px;
+  font-weight: bold;
+  line-height: 1.8;
+}
 
+li {
+  list-style-type: square;
 }
 
 .instructions {
-
-}
-
-.detailview {
-  padding-left: 90px;
-  padding-top: 90px;
+  font-size: 20px;
+  /* margin-left: 90px; */
+  font-weight: bold;
+  padding-left: 15px;
+  line-height: 1.8;
 }
 
 .content {
