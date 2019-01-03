@@ -1,38 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-.app {
-  border-style: solid;
-  border-color: black;
-}
-
-.input {
-  position: relative;
-  width: 280%;
-  padding: 12px;
-  /* margin: 8px 0; */
-  box-sizing: border-box;
-  border-radius: 9px;
   font-size: 20px;
-}
-
-.button {
-  display: inline-block;
-  text-align: center;
-  background-color: rgb(118, 220, 232);
-  border-radius: 4px;
-  border: none;
-  color: white;
-  padding: 8px 17px;
-  /* margin: 4px 2px; */
-  cursor: pointer;
-  font-size: 15px;
-  position: absolute;
-  /* bottom: 43px; */
-  bottom: 234px;
-  left: 750px;
 }
 
 .header {
@@ -47,16 +15,6 @@ body {
   text-align: left;
 }
 
-.content {
-  display: flex;
-  font-size: 20px;
-  line-height: 2;
-}
-
-.directoryContainer {
-  padding:50px;
-}
-
 h1 {
   font-family: 'Courgette', cursive;
   font-size: 50px;
@@ -67,8 +25,74 @@ h1 {
   bottom: 91px;
 }
 
-.title {
-  font-size: 40px;
-  color: black;
-  text-align: left;
+.directoryContainer {
+  /* position: relative; */
+  padding-left: 80px;
 }
+
+.input {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-size: 20px;
+  /* margin-left: 85px; */
+  margin-top: 50px;
+  /* width: 190%; */
+  /* width: 135%; */
+  width: 590px;
+  height: 40px;
+  /* margin: 8px 0; */
+}
+
+.button {
+  display: inline-block;
+  position: fixed;
+  text-align: center;
+  background-color: rgb(118, 220, 232);
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 8px 17px;
+  cursor: pointer;
+  font-size: 15px;
+  /* bottom: 4px; */
+  /* bottom: 239px; */
+  left: 680px;
+  top: 229px;
+}
+
+.recipecard {
+  width: 700px;
+  height: 70px;
+  border: 1px solid black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.name {
+  font-size: 40px;
+}
+
+.ingredients {
+
+}
+
+.instructions {
+
+}
+
+.detailview {
+  padding-left: 90px;
+  padding-top: 90px;
+}
+
+.content {
+  display: flex;
+  font-size: 20px;
+  line-height: 2;
+}
+
+
+

@@ -8,6 +8,13 @@ import logo from './assets/cutlery-circle.png';
 
 
 
+const Header = (props) => (
+    <div className="header">
+        <img src={logo} alt="Cutlery"></img>
+        <h1>Recipe App</h1> 
+    </div>
+);
+
 const DirectoryView = (props) => (
     <div className="directoryContainer">
         <SearchForm searchVal={props.searchVal} handleChange={props.handleChange} clickHandler={props.clickHandler} />
@@ -16,7 +23,7 @@ const DirectoryView = (props) => (
 );
 
 const DetailView = (props) => (
-    <div>
+    <div className="detailview">
         <p>{props.recipe.name}</p>
         <ol>
             {props.recipe.ingredients.map((ingredients, i) => <li key={i}>{ingredients}</li>)}
@@ -37,21 +44,8 @@ const SearchForm = (props) => (
     </div>
 );
 
-const Header = (props) => (
-    <div className="header">
-        <img src={logo} alt="Cutlery"></img>
-        <h1>Recipe App</h1> 
-    </div>
-);
-
-// const Title = (props) => (
-//     <div className="title">
-//     <h1>Recipe App</h1>
-//     </div>
-// );
-
 const RecipeCard = (props) => (
-    <div>
+    <div className="recipecard">
         <p onClick={() => props.clickHandler(props.id)}>{props.name}</p>
     </div>
 );
@@ -115,7 +109,6 @@ class App extends React.Component {
         return (
             <div>
                 <Header />
-                {/* <Title /> */}
                 <div className="content">
                     <div>
                         <DirectoryView
@@ -129,7 +122,9 @@ class App extends React.Component {
                     </div>
                     {/* <DetailView recipe={this.state.recipes[1]}/> */}
                     <div>
-                        <DetailView recipe={this.state.chosenRecipe} />
+                        <div>
+                            <DetailView recipe={this.state.chosenRecipe} />
+                        </div>
                     </div>
                 </div>
             </div>
