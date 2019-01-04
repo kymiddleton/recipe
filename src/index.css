@@ -39,7 +39,7 @@ h1 {
   margin-top: 50px;
   /* width: 190%; */
   /* width: 135%; */
-  width: 590px;
+  width: 500px;
   height: 40px;
   /* margin: 8px 0; */
 }
@@ -57,12 +57,12 @@ h1 {
   font-size: 15px;
   /* bottom: 4px; */
   /* bottom: 239px; */
-  left: 680px;
+  left: 590px;
   top: 229px;
 }
 
 .recipecard {
-  width: 700px;
+  width: 605px;
   height: 70px;
   border: 1px solid black;
   font-size: 25px;
@@ -73,7 +73,7 @@ h1 {
 
 .detailview {
   display: flex;
-  padding-left: 60px;
+  padding-left: 55px;
   padding-top: 45px;
 }
 
@@ -82,13 +82,14 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: 350px 550px;
-  padding-left: 15px;
+  /* grid-template-columns: 350px 550px; */
+  grid-template-columns: 300px 350px;
+  /* padding-left: 15px; */
   padding-top: 20px;
 }
 
 .recipetitle {
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'Courgette', cursive;
   color: black;
   text-align: center;
@@ -117,6 +118,7 @@ li {
   display: flex;
   font-size: 20px;
   line-height: 2;
+  /* border: 2px solid black; */
 }
 
 
